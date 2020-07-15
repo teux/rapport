@@ -1,27 +1,29 @@
 {
-  "compilerOptions": {
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "experimentalDecorators": true,
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "es5"
-  },
-  "include": [
-    "packages/**/*"
-  ]
+    "compilerOptions": {
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext",
+            "esnext.intl",
+            "es2017.intl",
+            "es2018.intl"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "es5"
+    },
+    "include": ["packages/**/*"]
 }

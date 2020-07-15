@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "components/*": ["src/components/*"],
+            "containers/*": ["src/containers/*"],
+            "types/*": ["src/types/*"]
+        }
+    },
+    "include": ["src/**/*", "types/types.ts"]
+}

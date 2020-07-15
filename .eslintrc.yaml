@@ -1,43 +1,54 @@
 ---
 env:
-  browser: true
+    browser: true
 extends:
-  - eslint:recommended
-  - plugin:@typescript-eslint/eslint-recommended
-  - plugin:@typescript-eslint/recommended
-  - plugin:@typescript-eslint/recommended-requiring-type-checking
-  - plugin:sonarjs/recommended
-  - airbnb-typescript
-  - airbnb/hooks
-parser: "@typescript-eslint/parser"
+    - eslint:recommended
+    - plugin:@typescript-eslint/eslint-recommended
+    - plugin:@typescript-eslint/recommended
+    - plugin:@typescript-eslint/recommended-requiring-type-checking
+    - prettier
+    - plugin:sonarjs/recommended
+    - airbnb-typescript
+    - airbnb/hooks
+parser: '@typescript-eslint/parser'
 parserOptions:
-  project: tsconfig.json
-  tsconfigRootDir: "."
+    project: tsconfig.json
+    tsconfigRootDir: '.'
 plugins:
-  - "@typescript-eslint"
-  - emotion
-  - sonarjs
+    - '@typescript-eslint'
+    - emotion
+    - prettier
+    - sonarjs
 root: true
 rules:
-  "@typescript-eslint/indent": [error, 4]
-  "@typescript-eslint/no-unsafe-assignment": off
-  "@typescript-eslint/no-unsafe-member-access": off
-  "@typescript-eslint/restrict-template-expressions":
-    - error
-    - allowNumber: true
-      allowAny: true
-  emotion/jsx-import: error
-  emotion/import-from-emotion: error
-  emotion/styled-import: error
-  indent: [error, 4]
-  import/prefer-default-export: off
-  react/jsx-indent: [error, 4]
-  react/prop-types: off
-  react/no-unescaped-entities: 
-    - error
-    - forbid: 
-      - char: ">"
-        alternatives: ["&gt;"]
-      - char: "<"
-        alternatives: ["&lt;"]
-  
+    '@typescript-eslint/indent': [error, 4]
+    '@typescript-eslint/no-unsafe-assignment': off
+    '@typescript-eslint/no-unsafe-member-access': off
+    '@typescript-eslint/no-unsafe-call': off
+    '@typescript-eslint/restrict-template-expressions':
+        - error
+        - allowNumber: true
+          allowAny: true
+    emotion/jsx-import: error
+    emotion/import-from-emotion: error
+    emotion/styled-import: error
+    implicit-arrow-linebreak: off
+    indent: [error, 4]
+    import/prefer-default-export: off
+    no-control-regex: off
+    no-empty: off
+    no-param-reassign: off
+    react/jsx-indent: [error, 4]
+    react/jsx-indent-props: [error, 4]
+    react/jsx-one-expression-per-line: off
+    react/jsx-props-no-spreading: off
+    react/no-array-index-key: off
+    react/prop-types: off
+    react/no-unescaped-entities:
+        - error
+        - forbid:
+              - char: '>'
+                alternatives: ['&gt;']
+              - char: '<'
+                alternatives: ['&lt;']
+    sonarjs/cognitive-complexity: [error, 17]

@@ -1,0 +1,8 @@
+{
+  "name": "alter-webpack-config",
+  "version": "0.0.0",
+  "description": "",
+  "main": "node.api.js",
+  "license": "MIT",
+  "private": false
+}
