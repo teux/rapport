@@ -38,6 +38,22 @@ const copyrightCss = css({
         position: 'absolute',
         right: 135,
     },
+    '& .terms': {
+        bottom: 32,
+        fontSize: 14,
+        left: 135,
+        lineHeight: '141%',
+        position: 'absolute',
+        textAlign: 'left',
+        '& a': {
+            color: '#333',
+            display: 'block',
+            textDecoration: 'none',
+            '&:visited': {
+                color: '#333',
+            },
+        },
+    },
 });
 
 export const Footer: FC = () => {
@@ -61,6 +77,14 @@ export const Footer: FC = () => {
                 <div className="rights">{rights}</div>
                 <div className="locale">
                     <Locale />
+                </div>
+                <div className="terms">
+                    <a href="/privacy/" target="_blank">
+                        Privacy Policy
+                    </a>
+                    <a href="/terms/" target="_blank">
+                        Terms &amp; Conditions
+                    </a>
                 </div>
             </div>
         </React.Fragment>
